@@ -1,0 +1,30 @@
+.row-footer {
+    background-image: url('./public/Imagem_rodape.svg'); /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0); /* Cor do texto no rodapé */
+    width: max-content;
+    padding: 400px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    justify-content: center;
+    display: flex;
+}
+
+.color-1 {
+    background-color: rgb(161, 77, 35);
+    border-radius: 10px;
+}
+
+.color-2 {
+    background-color: rgb(123, 45, 29);
+    border-radius: 10px;
+}
+
+.titulo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
