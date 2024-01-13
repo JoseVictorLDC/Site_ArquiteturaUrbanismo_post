@@ -1,0 +1,152 @@
+.text-container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    text-align: center;
+    z-index: 10;
+}
+.filter-bar {
+    background-color: #f8f9fa;
+    height: 100vh;
+    border-right: 1px solid #ced4da;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.col-md-9{
+    column-count: 2;
+    column-gap: 15px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.hover-image {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.overlay {
+    border-radius: 15px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(34, 81, 28, 0.7); /* Cor do filtro marrom (RGBA) */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.quadrado {
+    margin-bottom: 15px;
+}
+
+.image-container:hover {
+    border-radius: 15px;
+}
+
+.image-container:hover .hover-image {
+    transform: scale(1.05); 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid {
+    padding-top: 20px;
+}
+
+.row-footer {
+    color: rgb(0, 0, 0); /* Cor do texto no rodapé */
+    column-count: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 200px;
+}
+
+.container-footer-coluna {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    gap: 10px;
+}
+
+.container-footer {
+    background-image: url('./public/Imagem_rodape.svg'); /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: bottom;
+    height: 650px;
+}
+
+.col-esquerda {
+    padding: 0px;
+    height: 200px;
+    width: 350px;
+    padding-bottom: 50px;
+}
+
+
+.col-direita {
+    padding: 0px;
+    height: 400px;
+    width: 400px;
+}
+
+/* Estilo personalizado para os botões */
+.social-btn3 {
+    background-color: rgb(160,82,45);
+    color: #000000;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.social-btn3:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+  }
+
+  .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover::after,
+  .navbar-nav .nav-link.active::after {
+    width: 100%;
+  }
