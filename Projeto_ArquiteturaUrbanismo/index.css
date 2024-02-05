@@ -249,7 +249,7 @@
 
 @media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .col-esquerda {
     padding-left: 15px;
     margin-bottom: 60px;
@@ -326,7 +326,7 @@
   .navbar-navMenu .nav-linkMenu {
     position: relative;
   }
-  
+
   .navbar-navMenu .nav-linkMenu::after {
     content: "";
     position: absolute;
@@ -339,7 +339,7 @@
     transition: width 0.25s ease;
     margin-top: 0.5px;
   }
-  
+
   .navbar-navMenu .nav-linkMenu:hover::after,
   .navbar-navMenu .nav-linkMenu.active::after {
     width: 10%;

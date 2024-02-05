@@ -158,14 +158,14 @@
 
 .navbarMenu {
     display: none;
-  }
-  
-  .menu {
+}
+
+.menu {
     display: none;
     cursor: pointer;
-  }
-  
-  .menu-popup {
+}
+
+.menu-popup {
     display: none;
     position: fixed;
     top: 0;
@@ -178,40 +178,40 @@
     z-index: 1000;
     transition: transform 0.3s ease-out;
     transform: translateX(100%);
-  }
-  
-  .menu-popup a {
+}
+
+.menu-popup a {
     display: block;
     text-align: center;
     margin-bottom: 10px;
     color: white;
     text-decoration: none;
-  }
-  
-  .close-button {
+}
+
+.close-button {
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
     font-size: 18px;
     color: white;
-  }
-  
-  .imagemMenu {
+}
+
+.imagemMenu {
     height: 35px;
     width: 35px;
     margin-right: 20px;
-  }
-  
-  .logo {
+}
+
+.logo {
     height: 45px;
     width: 45px;
     margin-left: 20px;
-  }
+}
 
 @media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .col-esquerda {
         padding-left: 15px;
         margin-bottom: 60px;
@@ -225,27 +225,27 @@
         height: 700px;
     }
 
-    .col-md-9{
+    .col-md-9 {
         column-count: 1;
     }
 
     .navbar {
         display: none;
-      }
-    
-      .menu {
+    }
+
+    .menu {
         display: flex;
-      }
-    
-      .menu-popup {
+    }
+
+    .menu-popup {
         display: block;
-      }
-    
-      .navbar-navMenu .nav-linkMenu {
+    }
+
+    .navbar-navMenu .nav-linkMenu {
         position: relative;
-      }
-      
-      .navbar-navMenu .nav-linkMenu::after {
+    }
+
+    .navbar-navMenu .nav-linkMenu::after {
         content: "";
         position: absolute;
         width: 0;
@@ -256,19 +256,19 @@
         transform: translateX(-50%);
         transition: width 0.25s ease;
         margin-top: 0.5px;
-      }
-      
-      .navbar-navMenu .nav-linkMenu:hover::after,
-      .navbar-navMenu .nav-linkMenu.active::after {
+    }
+
+    .navbar-navMenu .nav-linkMenu:hover::after,
+    .navbar-navMenu .nav-linkMenu.active::after {
         width: 10%;
-      }
-    
-      .navbarMenu {
+    }
+
+    .navbarMenu {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
         background-color: #ffffff;
         color: white;
-      }
+    }
 }
