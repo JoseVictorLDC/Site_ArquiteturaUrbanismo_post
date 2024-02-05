@@ -11,3 +11,24 @@
       }
     });
   });
+  document.addEventListener('DOMContentLoaded', function () {
+    var menuIcon = document.getElementById("menuIcon");
+    var menuPopup = document.getElementById("menuPopup");
+    var closeButton = document.querySelector(".close-button");
+  
+    menuIcon.addEventListener("click", function () {
+      toggleMenu();
+    });
+  
+    closeButton.addEventListener("click", function () {
+      toggleMenu();
+    });
+  
+    function toggleMenu() {
+      if (menuPopup.style.transform === "translateX(100%)") {
+        menuPopup.style.transform = "translateX(0)";
+      } else {
+        menuPopup.style.transform = "translateX(100%)";
+      }
+    }
+  });
