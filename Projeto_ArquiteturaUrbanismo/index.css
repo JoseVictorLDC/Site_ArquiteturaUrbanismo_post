@@ -251,27 +251,44 @@
 
 @media screen and (max-width: 500px) {
   .col-esquerda {
-    padding-left: 15px;
-    margin-bottom: 60px;
-  }
-
-  .col-direita {
-    padding-right: 15px;
-  }
-
-  .container-footer {
-    height: 700px;
-  }
+      padding: 0px;
+      margin: 0px;
+      font-size: small;
+      width: 30vw;
+      margin-bottom: 100px;
+    }
+  
+    .col-direita {
+      padding: 0px;
+      margin: 0px;
+      font-size: small;
+      width: 50vw;
+    }
+  
+    .container-footer {
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    .row-footer {
+      margin: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      gap: 10px;
+      width: 90vw;
+    }
 
   .text-container {
-    width: 300px;
+    width: 80vw;
+    height: 10vh;
     height: 100px;
     position: absolute;
-    top: 20%;
+    top: 25vw;
     left: 50%;
     transform: translate(-50%, -10%);
     text-align: center;
     z-index: 10;
+    font-size: 10px;
   }
 
   .texto {
@@ -288,7 +305,7 @@
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    width: 350px;
+    width: 90vw;
     padding: 0px;
 
   }
@@ -301,6 +318,7 @@
 
   .container-fluid {
     padding: 0px;
+    width: 90vw;
   }
 
   .coluna {
@@ -352,5 +370,21 @@
     padding: 10px;
     background-color: #ffffff;
     color: white;
+  }
+
+  .animated-text {
+    opacity: 0;
+    transform: translatex(5px);
+    transition: opacity 2s ease, transform 2s ease;
+  }
+
+  .botao1 {
+    opacity: 0;
+    transform: translatex(5px);
+    transition: opacity 2s ease, transform 2s ease;
+  }
+
+  .carousel {
+    height: 20vh;
   }
 }

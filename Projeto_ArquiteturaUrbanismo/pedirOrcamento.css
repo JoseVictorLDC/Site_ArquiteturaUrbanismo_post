@@ -182,16 +182,31 @@ body {
   }
 
   .col-esquerda {
-    padding-left: 15px;
-    margin-bottom: 60px;
+    padding: 0px;
+    margin: 0px;
+    font-size: small;
+    width: 30vw;
+    margin-bottom: 100px;
   }
 
   .col-direita {
-    padding-right: 15px;
+    padding: 0px;
+    margin: 0px;
+    font-size: small;
+    width: 50vw;
   }
 
   .container-footer {
-    height: 700px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .row-footer {
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    gap: 10px;
+    width: 90vw;
   }
 
   .nav-link {

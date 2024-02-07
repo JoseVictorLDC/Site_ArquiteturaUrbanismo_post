@@ -1,27 +1,206 @@
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
+.img-fluid {
+  width: 1600px;
+  height: auto;
 }
 
-.navbarMenu {
+.text-container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  text-align: center;
+  z-index: 10;
+}
+
+.coluna {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 100px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.imagem {
+  height: 400px;
+  border-radius: 15px;
+}
+
+.linha {
+  display: flex;
+  flex-direction: row;
+}
+
+.coluna-central {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 1000px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo personalizado para os botões */
+.social-btn {
+  background-color: rgb(134, 65, 32);
+  color: black;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+  background-color: rgb(107, 49, 22);
+}
+
+/* Estilo personalizado para os botões */
+.social-btn3 {
+  background-color: rgb(160, 82, 45);
+  color: #000000;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.social-btn3:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.imagem-footer {
+  width: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-nav .nav-link:hover::after {
+  color: black;
+}
+
+.row-footer {
+  color: rgb(0, 0, 0);
+  /* Cor do texto no rodapé */
+  column-count: 2;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 200px;
+}
+
+.container-footer-coluna {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  gap: 10px;
+}
+
+.container-footer {
+  background-image: url('./public/Imagem_rodape.svg');
+  /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
+  background-size: cover;
+  background-position: bottom;
+  height: 650px;
+}
+
+.col-esquerda {
+  padding: 0px;
+  height: 200px;
+  width: 350px;
+  padding-bottom: 50px;
+}
+
+
+.col-direita {
+  padding: 0px;
+  height: 400px;
+  width: 400px;
+}
+
+.botao1 {
+  background-color: rgb(147, 53, 34);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
   padding: 10px;
-  background-color: #ffffff;
-  color: white;
+  text-decoration: none;
+}
+
+.botao1:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(123, 45, 29);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.25s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 50%;
+}
+
+.animated-text {
+  opacity: 0;
+  transform: translatex(100px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.animated-text.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.botao1 {
+  opacity: 0;
+  transform: translatex(150px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.botao1.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.botao2 {
+  background-color: rgb(147, 53, 34);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.botao2:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(123, 45, 29);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.navbarMenu {
+  display: none;
 }
 
 .menu {
   display: none;
   cursor: pointer;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 3px 0;
 }
 
 .menu-popup {
@@ -34,7 +213,7 @@ body {
   background-color: #ffffff;
   color: white;
   box-sizing: border-box;
-  z-index: 1;
+  z-index: 1000;
   transition: transform 0.3s ease-out;
   transform: translateX(100%);
 }
@@ -56,10 +235,6 @@ body {
   color: white;
 }
 
-.content {
-  padding: 20px;
-}
-
 .imagemMenu {
   height: 35px;
   width: 35px;
@@ -72,34 +247,120 @@ body {
   margin-left: 20px;
 }
 
-.navbar-navMenu .nav-linkMenu {
-  position: relative;
-}
+@media screen and (max-width: 768px) {}
 
-.navbar-navMenu .nav-linkMenu::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background-color: #000000;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: width 0.25s ease;
-  margin-top: 0.5px;
-}
+@media screen and (max-width: 500px) {
+  .col-esquerda {
+    padding: 0px;
+    margin-left: 30px;
+    font-size: small;
+    width: 50%;
+  }
 
-.navbar-navMenu .nav-linkMenu:hover::after,
-.navbar-navMenu .nav-linkMenu.active::after {
-  width: 10%;
-}
+  .col-direita {
+    padding: 0px;
+    margin-right: 10px;
+    font-size: small;
+    width: 200px;
+  }
 
-@media only screen and (max-width: 600px) {
+  .container-footer {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .row-footer {
+    gap: 20px;
+  }
+
+  .text-container {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    text-align: center;
+    z-index: 10;
+  }
+
+  .texto {
+    font-size: 20px;
+  }
+
+  .botao2 {
+    width: 100px;
+    height: 30px;
+  }
+
+  .linha {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 350px;
+    padding: 0px;
+
+  }
+
+  .coluna-central {
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .container-fluid {
+    padding: 0px;
+  }
+
+  .coluna {
+    padding: 0px;
+  }
+
+  .center {
+    padding: 0px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
   .menu {
     display: flex;
   }
 
   .menu-popup {
     display: block;
+  }
+
+  .navbar-navMenu .nav-linkMenu {
+    position: relative;
+  }
+
+  .navbar-navMenu .nav-linkMenu::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.25s ease;
+    margin-top: 0.5px;
+  }
+
+  .navbar-navMenu .nav-linkMenu:hover::after,
+  .navbar-navMenu .nav-linkMenu.active::after {
+    width: 10%;
+  }
+
+  .navbarMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    color: white;
   }
 }
