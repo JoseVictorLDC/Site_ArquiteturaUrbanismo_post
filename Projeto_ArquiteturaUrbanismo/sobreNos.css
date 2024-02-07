@@ -16,22 +16,32 @@
     padding-bottom: 20px;
 }
 
+.containerSobreNos {
+    width: 80vw;
+}
+
+.coluna-geral-dados {
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .coluna {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
-    padding-top: 20px;
     height: 600px;
 }
 
 .imagem {
-    padding-left: 100px;
+    padding-left: 50px;
     height: 600px;
 }
 
 .linha {
     display: flex;
     flex-direction: row;
+    gap: 5vw;
 }
 
 /* Estilo personalizado para os botões */
@@ -208,6 +218,15 @@
 
 .text-white {
     padding: 20px;
+    padding-bottom: 10vh;
+}
+
+.containerNavBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
 }
 
 @media screen and (max-width: 768px) {}
@@ -238,37 +257,7 @@
         padding-left: 0px;
         padding-right: 0px;
         gap: 10px;
-        width: 90vw;
-    }
-
-    .linha {
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
         width: 100vw;
-        align-items: center;
-    }
-
-    .coluna {
-        padding: 0px;
-        width: 100vw;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .coluna-geral {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .imagem {
-        width: 100vw;
-        margin-right: 2vw;
-        height: 50vh;
-    }
-
-    .col-md {
-        margin-bottom: 10px;
     }
 
     .navbar {
@@ -314,22 +303,54 @@
         color: white;
     }
 
-    .col-md {
-        max-width: 90vw;
-        margin-bottom: 10px;
+    .coluna-geral {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+    }
+
+    .containerSobreNos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5vw;
+    }
+
+    .linha {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .coluna {
+        padding: 0px;
+        width: 90vw;
+    }
+
+    .imagem {
+        width: 90vw;
+        height: 55vh;
         padding: 0px;
     }
 
-    .coluna-geral {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        max-width: 90vw;
+    .col-md {
+        margin-bottom: 10px;
+        width: 90vw;
+        padding: 0px;
     }
 
     .containerLink {
-        max-width: 90vw;
-        margin-left: 2.5vw;
+        width: 90vw;
+    }
+
+    .text-white {
+        padding: 20px;
+        padding-bottom: 5vh;
     }
 }
