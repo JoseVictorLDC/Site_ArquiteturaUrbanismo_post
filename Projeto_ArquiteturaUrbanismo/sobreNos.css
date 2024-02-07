@@ -308,7 +308,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90vw;
+        width: 100vw;
     }
 
     .containerSobreNos {
@@ -316,7 +316,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-left: 5vw;
     }
 
     .linha {
@@ -334,8 +333,10 @@
     }
 
     .imagem {
-        width: 90vw;
-        height: 55vh;
+        width: 88vw;
+        max-width: 300px;
+        max-height: 370px;
+        height: 58vh;
         padding: 0px;
     }
 
