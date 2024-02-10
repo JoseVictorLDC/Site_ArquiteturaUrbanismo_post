@@ -252,16 +252,17 @@
 @media screen and (max-width: 500px) {
   .col-esquerda {
     padding: 0px;
-    margin-left: 30px;
+    margin: 0px;
     font-size: small;
-    width: 50%;
+    width: 30vw;
+    margin-bottom: 100px;
   }
 
   .col-direita {
     padding: 0px;
-    margin-right: 10px;
+    margin: 0px;
     font-size: small;
-    width: 200px;
+    width: 50vw;
   }
 
   .container-footer {
@@ -270,18 +271,11 @@
   }
 
   .row-footer {
-    gap: 20px;
-  }
-
-  .text-container {
-    width: 300px;
-    height: 100px;
-    position: absolute;
-    top: 12%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-    text-align: center;
-    z-index: 10;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    gap: 10px;
+    width: 90vw;
   }
 
   .texto {
@@ -298,7 +292,7 @@
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    width: 350px;
+    width: 90vw;
     padding: 0px;
 
   }
@@ -311,6 +305,7 @@
 
   .container-fluid {
     padding: 0px;
+    width: 90vw;
   }
 
   .coluna {
@@ -363,4 +358,50 @@
     background-color: #ffffff;
     color: white;
   }
+
+  .animated-text {
+    opacity: 0;
+    transform: translatex(5px);
+    transition: opacity 2s ease, transform 2s ease;
+  }
+
+  .botao1 {
+    opacity: 0;
+    transform: translatex(5px);
+    transition: opacity 2s ease, transform 2s ease;
+  }
+
+  .carousel {
+    height: 20vh;
+  }
+
+  .container-inicio {
+    height: 45vh;
+    max-height: 350px;
+  }
+
+  .text-container {
+    width: 80vw;
+    height: 10vh;
+    height: 100px;
+    position: absolute;
+    top: 75vw;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    text-align: center;
+    z-index: 10;
+    font-size: 10px;
+  }
+
+  .blocos-cinza {
+    background-color: #f0f0f0;
+    /* Cor de fundo cinza */
+    padding: 10px;
+    /* Espaçamento interno */
+    margin: 10px;
+    /* Espaçamento externo */
+    text-align: center;
+    /* Centralizar conteúdo */
+  }
+
 }
