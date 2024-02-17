@@ -209,6 +209,28 @@
     margin-left: 20px;
 }
 
+.divCreditos {
+    width: 15vw;
+    margin-bottom: 5vh;
+}
+
+.divCreditosTelefone {
+    display: none;
+    width: 85vw;
+}
+
+.creditos {
+    font-size: 1.7vh;
+}
+
+.form-check {
+    margin-bottom: 5vh;
+}
+
+.col-md-3 {
+    height: 50vh;
+}
+
 @media screen and (max-width: 768px) {}
 
 @media screen and (max-width: 500px) {
@@ -285,5 +307,22 @@
         padding: 10px;
         background-color: #ffffff;
         color: white;
+    }
+
+    .divCreditosTelefone {
+        display: block;
+        width: 85vw;
+    }
+
+    .divCreditos {
+        display: none;
+    }
+
+    .form-check {
+        margin-bottom: 0px;
+    }
+    
+    .col-md-3 {
+        height: 40vh;
     }
 }
